@@ -1,0 +1,12 @@
+.list {
+  background-color: rgba(152, 46, 45, 0.79);
+  list-style: none;
+  display: inline-flex;
+
+  &__item {
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: rgba(152, 46, 45, 1);
+    margin-right: .5rem;
+  }
+}
