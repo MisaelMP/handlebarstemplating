@@ -1,12 +1,17 @@
 .list {
-  background-color: rgba(152, 46, 45, 0.79);
-  list-style: none;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+
+  &__items {
+    background-color: rgba(152, 46, 45, 0.79);
+    list-style: none;
+    padding: 0;
+  }
 
   &__item {
     padding: 2rem;
     font-size: 2rem;
     background-color: rgba(152, 46, 45, 1);
-    margin-right: .5rem;
+    margin: .5rem;
   }
 }

@@ -1,5 +1,7 @@
-{
-   "title" : "Code Maven",
+"data":[{
+   "title" : {
+      "name": "name here"
+   },
    "description" : "Coding is fun!",
    "articles" : [
        {
@@ -11,4 +13,4 @@
           "url"   : "http://code-maven.com/on-load-counter-with-javascript-and-local-storage"
        }
    ]
-}
+}];

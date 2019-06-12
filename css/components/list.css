@@ -1,1 +1,1 @@
-.list{background-color:rgba(152,46,45,0.79);list-style:none;display:inline-flex}.list__item{padding:2rem;font-size:2rem;background-color:#982e2d;margin-right:.5rem}
+.list{display:flex;justify-content:center}.list__items{background-color:rgba(152,46,45,0.79);list-style:none;padding:0}.list__item{padding:2rem;font-size:2rem;background-color:#982e2d;margin:.5rem}

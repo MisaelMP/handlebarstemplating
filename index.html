@@ -23,23 +23,30 @@
 
   <!-- Add your site or application content here -->
   <h1 class="title-heading">Handlebars templating.</h1>
-  <div id="template-container"></div>
+  <h1 class="template-container"></h1>
+  <div class='search-box'>
+    <form action='/search' class='search-form' method='get'>
+      <input class='search-text' name='q' placeholder='Search Box' type='text' />
+      <button class='button' type='submit'><span>Search</span></button>
+    </form>
+  </div>
   <div id="template-content"></div>
   <script id="template" type="text/x-handlebars-template">
-
-    {{#each this}}
-    <ul class="list">
-      <li class="list__item">
-        {{title}}
-      </li>
-      <li class="list__item">
-        <img src="{{thumbnailUrl}}" alt="">
-      </li>
-      <li class="list__item">
-        {{albumId}}
-      </li>
-    </ul>
-    {{/each}}
+  <div class="list">
+      <ul class="list__items">
+        {{#each results}}
+          <li class="list__item">
+            {{user.username}}
+          </li>
+          <li class="list__item">
+            <img src="{{urls.thumb}}" alt="{{description}}">
+          </li>
+          <li class="list__item">
+            {{user.name}}
+          </li>
+        {{/each}}
+      </ul>
+  </div>
   </script>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
